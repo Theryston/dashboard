@@ -3,7 +3,7 @@
 import { useState } from "react";
 import * as S from "./styles";
 import ArrowTopRightBlack from "../../../../assets/icons/arrow-top-right-black.svg";
-import ArrowTopRightBlue from "../../../../assets/icons/arrow-top-right-Blue.svg";
+import ArrowTopRightBlue from "../../../../assets/icons/arrow-top-right-blue.svg";
 import PoundsSvg from "../../../../assets/icons/pounds.svg";
 import WorldBlueSvg from "../../../../assets/icons/world-blue.svg";
 import BlueFlagSvg from "../../../../assets/icons/blue-flag.svg";

@@ -46,3 +46,21 @@ export const ImageBanner = styled(Image)`
   height: 100%;
   object-fit: contain;
 `;
+
+export const CloseBannerIcon = styled(Image)<{ show: boolean }>`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: ${(props) => (props.show ? 1 : 0)};
+  transition: 0.2s;
+
+  @media (max-width: 1440px) {
+    top: 7px;
+    right: 7px;
+    width: 23px;
+    height: 23px;
+  }
+`;

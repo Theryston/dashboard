@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ChartContainer = styled.div`
   width: 100%;
@@ -20,7 +20,11 @@ export const ChartContainer = styled.div`
 `;
 
 export const Card = styled.div<{ hasFooter?: boolean }>`
-  height: calc(100% - 64px);
+  ${(props) =>
+    props.hasFooter
+      ? "height: calc(100% - 32px);"
+      : "height: calc(100% - 64px);"}
+
   width: calc(100% - 80px);
   background: #ffffff;
   padding: 32px 40px ${(props) => (props.hasFooter ? "0px" : "32px")} 40px;
@@ -28,7 +32,10 @@ export const Card = styled.div<{ hasFooter?: boolean }>`
   flex-direction: column;
 
   @media (max-width: 1440px) {
-    height: calc(100% - 48px);
+    ${(props) =>
+      props.hasFooter
+        ? "height: calc(100% - 24px);"
+        : "height: calc(100% - 48px);"}
     width: calc(100% - 56px);
     padding: 24px 28px ${(props) => (props.hasFooter ? "0px" : "24px")} 28px;
   }

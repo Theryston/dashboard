@@ -4,6 +4,7 @@ import BalanceChart from "./components/BalanceChart";
 import Banner from "./components/Banner";
 import Chart from "./components/Chart";
 import ExpectedChart from "./components/ExpectedChart";
+import RetirementAgeChart from "./components/RetirementAgeChart";
 import SideBar from "./components/SideBar";
 import UserAvatar from "./components/UserAvatar";
 import * as S from "./styles";
@@ -24,8 +25,8 @@ export default function DashboardPage() {
         <S.ChartContainer>
           <BalanceChart />
           <ExpectedChart />
-          <Chart>ok</Chart>
-          <Chart>ok</Chart>
+          <RetirementAgeChart />
+          <Chart footer="okk">ok</Chart>
         </S.ChartContainer>
       </S.Content>
     </S.DashboardContainer>

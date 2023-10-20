@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const DashboardContainer = styled.div`
   display: flex;
   width: 100%;
+  height: 100vh;
 `;
 
 export const Content = styled.div`
@@ -38,5 +39,19 @@ export const UserSection = styled.div`
     @media (max-width: 1440px) {
       font-size: 17px;
     }
+  }
+`;
+
+export const ChartContainer = styled.div`
+  display: grid;
+  column-gap: 48px;
+  row-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 333px 175px;
+
+  @media (max-width: 1440px) {
+    column-gap: 36px;
+    row-gap: 30px;
+    grid-template-rows: 250px 130px;
   }
 `;

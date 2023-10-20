@@ -13,25 +13,25 @@ export default function MoreCharts() {
   return (
     <S.Container>
       <Card>
-        <S.CardIcon src={PoundsSvg} />
+        <S.CardIcon src={PoundsSvg} alt="Pounds" />
         <S.CardText>
           Add <br /> contributions
         </S.CardText>
       </Card>
       <Card>
-        <S.CardIcon src={WorldBlueSvg} />
+        <S.CardIcon src={WorldBlueSvg} alt="WorldBlue" />
         <S.CardText>
           Investment <br /> approach
         </S.CardText>
       </Card>
       <Card>
-        <S.CardIcon src={BlueFlagSvg} />
+        <S.CardIcon src={BlueFlagSvg} alt="BlueFlag" />
         <S.CardText>
           Projections <br /> state pension
         </S.CardText>
       </Card>
       <Card>
-        <S.CardIcon src={PlaySvg} />
+        <S.CardIcon src={PlaySvg} alt="Play" />
         <S.CardText>
           Auto enrolment <br /> contributions
         </S.CardText>

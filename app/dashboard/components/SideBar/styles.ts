@@ -9,6 +9,7 @@ export const SideBarContainer = styled.div`
   border-right: 1px #dddfe4 solid;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media (max-width: 1440px) {
     padding: 37px 19px 0px 19px;
@@ -20,14 +21,12 @@ export const ContentSideBar = styled.div``;
 
 export const WrapperNavigation = styled.div`
   margin-top: 78px;
-  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   gap: 42px;
 
   @media (max-width: 1440px) {
     margin-top: 58px;
-    margin-bottom: 60px;
     gap: 34px;
   }
 `;
@@ -69,7 +68,6 @@ export const Line = styled.div`
 `;
 
 export const FooterItems = styled.div`
-  margin-top: auto;
   margin-bottom: 62px;
   display: flex;
   flex-direction: column;
@@ -77,6 +75,9 @@ export const FooterItems = styled.div`
 
   @media (max-width: 1440px) {
     margin-bottom: 49px;
+  }
+  @media (max-width: 1400px) {
+    margin-bottom: 20px;
   }
 `;
 

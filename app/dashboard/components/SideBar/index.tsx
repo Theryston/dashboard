@@ -2,13 +2,13 @@
 
 import * as S from "./styles";
 import Image from "next/image";
-import LogoSvg from "../../../assets/logo.svg";
-import HomeSvg from "../../../assets/icons/home.svg";
-import DashboardSvg from "../../../assets/icons/dashboard.svg";
-import HandPlusSvg from "../../../assets/icons/hand-plus.svg";
-import WorldSvg from "../../../assets/icons/world.svg";
-import GuyChatSvg from "../../../assets/icons/guy-chat.svg";
-import GuysSvg from "../../../assets/icons/guys.svg";
+import LogoSvg from "../../../../assets/logo.svg";
+import HomeSvg from "../../../../assets/icons/home.svg";
+import DashboardSvg from "../../../../assets/icons/dashboard.svg";
+import HandPlusSvg from "../../../../assets/icons/hand-plus.svg";
+import WorldSvg from "../../../../assets/icons/world.svg";
+import GuyChatSvg from "../../../../assets/icons/guy-chat.svg";
+import GuysSvg from "../../../../assets/icons/guys.svg";
 
 export default function SideBar() {
   return (
@@ -41,9 +41,8 @@ export default function SideBar() {
             <S.NavigationText>Data sharing permissions</S.NavigationText>
           </S.NavigationItem>
         </S.WrapperNavigation>
-        <S.Line />
       </S.ContentSideBar>
-
+      <S.Line />
       <S.FooterItems>
         <S.FooterItem>My dashboard</S.FooterItem>
         <S.FooterItem>My account</S.FooterItem>

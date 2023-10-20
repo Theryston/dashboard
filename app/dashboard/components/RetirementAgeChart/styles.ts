@@ -25,12 +25,12 @@ export const ValueNumWrapper = styled.div`
   }
 
   .value-num {
-    font-size: 80px;
+    font-size: 68px;
     font-weight: bold;
     color: #0060fd;
 
     @media (max-width: 1440px) {
-      font-size: 59px;
+      font-size: 48px;
     }
   }
 

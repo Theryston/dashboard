@@ -47,7 +47,7 @@ export const ChartContainer = styled.div`
   column-gap: 48px;
   row-gap: 40px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 333px 175px;
+  grid-template-rows: 333px 180px;
 
   @media (max-width: 1440px) {
     column-gap: 36px;

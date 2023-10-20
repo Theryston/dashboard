@@ -8,6 +8,9 @@ export const DashboardContainer = styled.div`
 export const Content = styled.div`
   padding: 50px 48px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
   @media (max-width: 1440px) {
     padding: 37px 36px;

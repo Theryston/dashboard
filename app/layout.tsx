@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Plus_Jakarta_Sans } from "next/font/google";
-import StyledComponentsRegistry from "./lib/registry";
 import { GlobalStyle } from "./global-styles";
+import dynamic from "next/dynamic";
 
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Dashboard",
-};
+const NoSSR = dynamic(() => import("./lib/registry"), { ssr: false });
 
 export default function RootLayout({
   children,
@@ -16,8 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={plusJakartaSans.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      <body
+        style={{
+          margin: 0,
+          padding: 0,
+        }}
+        className={plusJakartaSans.className}
+      >
+        <GlobalStyle />
+        <NoSSR>{children}</NoSSR>
       </body>
     </html>
   );

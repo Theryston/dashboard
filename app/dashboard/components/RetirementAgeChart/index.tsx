@@ -7,7 +7,7 @@ export default function RetirementAgeChart() {
       footer="Change retirement age"
       customPadding={{
         large: "13px 40px 0px 40px",
-        small: "9px 33px 0px 33px",
+        small: "9px 28px 0px 28px",
       }}
     >
       <S.Container>

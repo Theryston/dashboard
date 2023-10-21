@@ -27,9 +27,11 @@ export const CurrentPriceText = styled.p`
 
 export const EyesIcon = styled(Image)`
   width: 25px;
+  height: 25px;
 
   @media (max-width: 1440px) {
     width: 19px;
+    height: 19px;
   }
 `;
 

@@ -14,6 +14,7 @@ export const UserImage = styled(Image)`
   height: 50px;
   object-fit: cover;
   border-radius: 50px;
+  cursor: pointer;
 
   @media (max-width: 1440px) {
     width: 38px;

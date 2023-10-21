@@ -3,11 +3,25 @@
 import WomanPng from "../../../../assets/mock-woman.png";
 import UserBar from "../UserBar";
 import * as S from "./styles";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export default function UserAvatar() {
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const [isUserBarOpen, setIsUserBarOpen] = useState(false);
+
+  const handleShowNotification = useCallback(() => {
+    setInterval(() => {
+      setIsNotificationOpen(true);
+
+      setTimeout(() => {
+        setIsNotificationOpen(false);
+      }, 5000);
+    }, 60000);
+  }, []);
+
+  useEffect(() => {
+    handleShowNotification();
+  }, []);
 
   return (
     <S.UserAvatarContainer>

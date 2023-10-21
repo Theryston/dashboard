@@ -49,4 +49,9 @@ export const NotificationFlag = styled.p<{ show?: boolean }>`
   border-radius: 18px;
   opacity: ${(props) => (props.show ? 1 : 0)};
   transition: 0.2s;
+
+  @media (max-width: 1440px) {
+    padding: 6px 13px;
+    font-size: 11px;
+  }
 `;

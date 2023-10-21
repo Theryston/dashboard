@@ -16,12 +16,12 @@ export const BalanceWrapper = styled.div`
 `;
 
 export const CurrentPriceText = styled.p`
-  font-size: 30px !important;
+  font-size: 30px;
   font-weight: bold;
   color: #0160fd;
 
   @media (max-width: 1440px) {
-    font-size: 22px !important;
+    font-size: 22px;
   }
 `;
 

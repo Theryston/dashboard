@@ -3,7 +3,13 @@ import * as S from "./styles";
 
 export default function RetirementAgeChart() {
   return (
-    <Chart footer="Change retirement age">
+    <Chart
+      footer="Change retirement age"
+      customPadding={{
+        large: "13px 40px 0px 40px",
+        small: "9px 33px 0px 33px",
+      }}
+    >
       <S.Container>
         <S.Title>Expected retirement age</S.Title>
         <S.ValueNumWrapper>

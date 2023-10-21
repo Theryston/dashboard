@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const DashboardContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 100vh;
 `;
 
 export const Content = styled.div`
@@ -12,6 +11,9 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
 
   @media (max-width: 1440px) {
     padding: 37px 36px;

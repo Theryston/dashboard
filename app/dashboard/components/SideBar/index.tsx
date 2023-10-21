@@ -14,7 +14,7 @@ export default function SideBar() {
   return (
     <S.SideBarContainer>
       <S.ContentSideBar>
-        <Image src={LogoSvg} alt="logo" />
+        <S.Logo src={LogoSvg} alt="logo" />
         <S.WrapperNavigation>
           <S.NavigationItem>
             <S.NavigationIcon src={HomeSvg} alt="Your Collegia account" />

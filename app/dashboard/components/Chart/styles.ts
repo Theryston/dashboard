@@ -19,25 +19,29 @@ export const ChartContainer = styled.div`
   }
 `;
 
-export const Card = styled.div<{ hasFooter?: boolean }>`
-  ${(props) =>
-    props.hasFooter
-      ? "height: calc(100% - 32px);"
-      : "height: calc(100% - 64px);"}
-
-  width: calc(100% - 80px);
+export const Card = styled.div<{
+  hasFooter?: boolean;
+  customPadding?: {
+    large: string;
+    small: string;
+  };
+}>`
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
   background: #ffffff;
-  padding: 32px 40px ${(props) => (props.hasFooter ? "0px" : "32px")} 40px;
+  padding: ${(props) =>
+    props.customPadding
+      ? props.customPadding.large
+      : `32px 40px ${props.hasFooter ? "0px" : "32px"} 40px`};
   display: flex;
   flex-direction: column;
 
   @media (max-width: 1440px) {
-    ${(props) =>
-      props.hasFooter
-        ? "height: calc(100% - 24px);"
-        : "height: calc(100% - 48px);"}
-    width: calc(100% - 56px);
-    padding: 24px 28px ${(props) => (props.hasFooter ? "0px" : "24px")} 28px;
+    padding: ${(props) =>
+      props.customPadding
+        ? props.customPadding.small
+        : `24px 28px ${props.hasFooter ? "0px" : "24px"} 28px`};
   }
 `;
 

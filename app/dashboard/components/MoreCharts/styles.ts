@@ -13,11 +13,8 @@ export const Card = styled.div<{ isHouver: boolean }>`
   width: 100%;
   background: #fff;
   position: relative;
-  ${(props) =>
-    props.isHouver &&
-    css`
-      border: 1px solid #0160fd;
-    `}
+
+  border: 1px solid ${(props) => (props.isHouver ? "#0160fd" : "#FFF")};
   transition: 0.2s;
   display: flex;
   flex-direction: column;
@@ -27,12 +24,12 @@ export const Card = styled.div<{ isHouver: boolean }>`
 export const CardIcon = styled(Image)`
   margin-left: 15px;
   margin-bottom: 10px;
-  width: 19px;
+  height: 25px;
 
   @media (max-width: 1440px) {
     margin-bottom: 13px;
     margin-left: 11px;
-    width: 14px;
+    height: 19px;
   }
 `;
 

@@ -2,9 +2,10 @@ import Image from "next/image";
 import styled from "styled-components";
 
 export const SideBarContainer = styled.div`
+  box-sizing: border-box;
   background: #ffffff;
   height: 100vh;
-  width: 312px;
+  width: 365px;
   padding: 50px 28px 0px 28px;
   border-right: 1px #dddfe4 solid;
   display: flex;
@@ -13,11 +14,19 @@ export const SideBarContainer = styled.div`
 
   @media (max-width: 1440px) {
     padding: 37px 19px 0px 19px;
-    width: 236px;
+    width: 281px;
   }
 `;
 
 export const ContentSideBar = styled.div``;
+
+export const Logo = styled(Image)`
+  width: 148px;
+
+  @media (max-width: 1440px) {
+    width: 111px;
+  }
+`;
 
 export const WrapperNavigation = styled.div`
   margin-top: 78px;

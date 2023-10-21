@@ -11,7 +11,7 @@ export default function Banner() {
 
   return (
     <>
-      {showBanner && (
+      {showBanner ? (
         <S.BannerContainer
           onMouseEnter={() => setShowCloseBanner(true)}
           onMouseLeave={() => setShowCloseBanner(false)}
@@ -31,6 +31,8 @@ export default function Banner() {
           </S.BannerContentWrapper>
           <S.ImageBanner src={BannerJpg} alt="banner" />
         </S.BannerContainer>
+      ) : (
+        <S.Spacer />
       )}
     </>
   );

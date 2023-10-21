@@ -64,3 +64,7 @@ export const CloseBannerIcon = styled(Image)<{ show: boolean }>`
     height: 23px;
   }
 `;
+
+export const Spacer = styled.div`
+  height: 20px;
+`;

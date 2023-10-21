@@ -28,7 +28,9 @@ export default function BalanceChart() {
         <S.ProcessInfos>
           <p className="details-progress">Expected income</p>
           <div className="value-num-wrapper">
-            <p className="value-num">£ 41,210.53</p>
+            <p className="value-num">
+              {showBalance ? "£ 41,210.53" : "******"}
+            </p>
             <p className="period">/ year</p>
           </div>
         </S.ProcessInfos>

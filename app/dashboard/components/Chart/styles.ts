@@ -52,7 +52,7 @@ export const FooterWrapper = styled.div`
 export const Line = styled.div`
   width: 100%;
   background: #b4b8c3;
-  height: 1px;
+  height: 0.4px;
 `;
 
 export const FooterItem = styled.div`

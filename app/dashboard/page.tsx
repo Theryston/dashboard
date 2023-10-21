@@ -17,7 +17,7 @@ export default function DashboardPage() {
       <S.Content>
         <S.UserSection>
           <div>
-            <p>Hello. Welcome back,</p>
+            <p className="hello-message">Hello. Welcome back,</p>
             <p className="user-name">Alisha Smith</p>
           </div>
           <UserAvatar />

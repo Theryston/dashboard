@@ -25,7 +25,7 @@ export const UserSection = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  p {
+  .hello-message {
     font-size: 18px;
     font-weight: 400;
 

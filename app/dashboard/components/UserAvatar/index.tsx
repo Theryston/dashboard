@@ -16,7 +16,7 @@ export default function UserAvatar() {
       setTimeout(() => {
         setIsNotificationOpen(false);
       }, 5000);
-    }, 60000);
+    }, 30000);
   }, []);
 
   useEffect(() => {

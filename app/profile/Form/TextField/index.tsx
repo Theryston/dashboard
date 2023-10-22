@@ -8,10 +8,15 @@ const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 type Props = {
   label: string;
+  smallerLabel?: string;
   initialValue?: string;
 };
 
-export default function TextField({ label, initialValue }: Props) {
+export default function TextField({
+  label,
+  initialValue,
+  smallerLabel,
+}: Props) {
   const [value, setValue] = useState(initialValue || "");
 
   return (

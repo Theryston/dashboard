@@ -2,6 +2,7 @@
 
 import FloatBar from "./FloatBar";
 import Header from "./Header";
+import Menu from "./Menu";
 import * as S from "./styles";
 
 export default function ProfilePage() {
@@ -14,6 +15,7 @@ export default function ProfilePage() {
           <S.UserStatus>Active</S.UserStatus>
           <S.UserName>John Smith</S.UserName>
         </S.UserInfoWrapper>
+        <Menu />
       </S.Content>
     </S.Container>
   );

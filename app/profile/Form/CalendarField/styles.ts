@@ -23,7 +23,7 @@ export const Input = styled.input`
   border: none;
   background: #f4f6fb;
   box-sizing: border-box;
-  padding: 19px 10px;
+  padding: 19px 10px 19px 0px;
   font-weight: bold;
   position: relative;
 
@@ -46,13 +46,27 @@ export const Input = styled.input`
 
   @media (max-width: 1440px) {
     font-size: 15px;
-    padding: 13px 10px;
+    padding: 13px 10px 13px 0px;
   }
 `;
 
 export const SelectWrapper = styled.div`
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+  background: #f4f6fb;
+`;
+
+export const CalendarIcon = styled(Image)`
+  margin: 0px 10px;
+  width: 22px;
+  height: 22px;
+
+  @media (max-width: 1440px) {
+    width: 17px;
+    height: 17px;
+  }
 `;
 
 export const IconDown = styled(Image)`

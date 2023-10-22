@@ -3,10 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div``;
 
 export const Content = styled.div`
+  height: calc(100vh - 90px);
+  box-sizing: border-box;
+  overflow-y: hidden;
   padding: 63px 193px 0px 350px;
 
   @media (max-width: 1440px) {
     padding: 47px 153px 0px 270px;
+    height: calc(100vh - 67px);
   }
 `;
 

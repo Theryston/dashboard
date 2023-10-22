@@ -4,6 +4,7 @@ import MotionFadeIn from "./MotionFadeIn";
 
 export const Container = styled.div<{ isOpen: boolean }>`
   position: fixed;
+  z-index: 100;
   top: 136px;
   left: 36px;
   width: ${(props) => (props.isOpen ? "360px" : "100px")};

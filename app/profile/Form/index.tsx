@@ -1,6 +1,7 @@
 import Button from "./Button";
 import CalendarField from "./CalendarField";
 import ChoseTitle from "./ChoseTitle";
+import PhoneField from "./PhoneField";
 import SelectField from "./SelectField";
 import TextField from "./TextField";
 import * as S from "./styles";
@@ -64,6 +65,26 @@ export default function Form() {
           smallerLabel="( Optional )"
           initialValue="3 West Way"
         />
+        <S.MultiInputsWrapper>
+          <TextField label="City" initialValue="Oxford" />
+          <SelectField
+            label="Country"
+            options={[
+              {
+                id: "uk",
+                text: "United Kingdom",
+              },
+              {
+                id: "br",
+                text: "Brazil",
+              },
+            ]}
+          />
+        </S.MultiInputsWrapper>
+        <S.MultiInputsWrapper>
+          <TextField label="Postal Code" initialValue="OX2 0JB" />
+          <PhoneField initialNumber="01865 416076" />
+        </S.MultiInputsWrapper>
       </S.InputsWrapper>
     </S.Container>
   );

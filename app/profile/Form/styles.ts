@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -33,9 +34,32 @@ export const ActionsWrapper = styled.div`
   display: flex;
   gap: 20px;
   margin-top: 10px;
+  margin-bottom: 8px;
 
   @media (max-width: 1440px) {
     margin-top: 20px;
     gap: 15px;
+  }
+`;
+
+export const DirectorLinkWrapper = styled.div`
+  display: flex;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 500;
+
+  @media (max-width: 1440px) {
+    font-size: 15px;
+  }
+`;
+
+export const OpenDirectorLinkIcon = styled(Image)`
+  width: 15px;
+  height: 15px;
+  margin-top: auto;
+
+  @media (max-width: 1440px) {
+    width: 13px;
+    height: 13px;
   }
 `;

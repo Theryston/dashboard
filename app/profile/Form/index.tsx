@@ -4,6 +4,7 @@ import ChoseTitle from "./ChoseTitle";
 import PhoneField from "./PhoneField";
 import SelectField from "./SelectField";
 import TextField from "./TextField";
+import ArrowTopRightBlackSvg from "../../../assets/icons/arrow-top-right-black.svg";
 import * as S from "./styles";
 
 export default function Form() {
@@ -85,6 +86,10 @@ export default function Form() {
           <TextField label="Postal Code" initialValue="OX2 0JB" />
           <PhoneField initialNumber="01865 416076" />
         </S.MultiInputsWrapper>
+        <S.DirectorLinkWrapper>
+          <p>Set as director</p>
+          <S.OpenDirectorLinkIcon src={ArrowTopRightBlackSvg} alt="Open Link" />
+        </S.DirectorLinkWrapper>
       </S.InputsWrapper>
     </S.Container>
   );

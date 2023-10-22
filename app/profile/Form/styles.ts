@@ -28,3 +28,14 @@ export const MultiInputsWrapper = styled.div`
     gap: 27px;
   }
 `;
+
+export const ActionsWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+
+  @media (max-width: 1440px) {
+    margin-top: 20px;
+    gap: 15px;
+  }
+`;

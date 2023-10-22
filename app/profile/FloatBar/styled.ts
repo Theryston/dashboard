@@ -14,7 +14,7 @@ export const Container = styled.div<{ isOpen: boolean }>`
 
   @media (max-width: 1440px) {
     top: 102px;
-    width: ${(props) => (props.isOpen ? "252px" : "70px")};
+    width: ${(props) => (props.isOpen ? "268px" : "70px")};
     height: 525px;
   }
 `;

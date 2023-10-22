@@ -59,7 +59,11 @@ export default function Form() {
           <TextField label="Tax Code" initialValue="1275L" />
         </S.MultiInputsWrapper>
         <TextField label="Address Line 1" initialValue="Buxton Court" />
-        <TextField label="Address Line 2" initialValue="3 West Way" />
+        <TextField
+          label="Address Line 2"
+          smallerLabel="( Optional )"
+          initialValue="3 West Way"
+        />
       </S.InputsWrapper>
     </S.Container>
   );

@@ -10,6 +10,11 @@ export const InputWrapper = styled.div`
 export const Label = styled.label`
   font-size: 16px;
 
+  .small {
+    color: #aaaeb7;
+    margin-left: 4px;
+  }
+
   @media (max-width: 1440px) {
     font-size: 12px;
   }

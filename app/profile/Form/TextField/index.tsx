@@ -21,7 +21,10 @@ export default function TextField({
 
   return (
     <S.InputWrapper>
-      <S.Label>{label}</S.Label>
+      <S.Label>
+        {label}
+        {smallerLabel && <span className="small">{smallerLabel}</span>}
+      </S.Label>
       <S.Input
         type="text"
         value={value}
